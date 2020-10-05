@@ -2,9 +2,36 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
-    <title></title>
+    <link rel="stylesheet" href="css/master.css">
+    <title>Eduardo's Personal Webiste - Welcome! Please get confortable, this is my life's work, from Web Development to Architecture. Look around and contact me :)</title></title>
   </head>
   <body>
-    <p>test</p>
+    <script scr=js/three.js>
+    </script>
+    <script>
+      var scene = new THREE.Scene( );
+      var camera = new THREE.PerspectiveCamera( 75, window.innerWidth / window.InnerHeight, 0.1, 1000);
+
+      var renderer = new THREE.WebGLRenderer ();
+      renderer.setSize( window.innerWidth, window.InnerHeight);
+      document.body.apeendChild ( renderer.domElement);
+      //game logic
+      var update = function()
+      {
+
+      };
+      //draw scene
+      var render = function( )
+      {
+        renderer.render (scene, camera);
+      };
+      //run game loop (update,render,repeat)
+      var GameLoop = function ( ){
+        requestAnimationFrame ( GameLoop);
+        update( );
+        render( );
+      };
+      GameLoop( );
+    </script>
   </body>
 </html>
