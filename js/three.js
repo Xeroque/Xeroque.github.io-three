@@ -1,4 +1,3 @@
-alert(test)
 // threejs.org/license
 (function (global, factory) {
 	typeof exports === 'object' && typeof module !== 'undefined' ? factory(exports) :

@@ -1,37 +1,35 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-    <link rel="stylesheet" href="css/master.css">
-    <title>Eduardo's Personal Webiste - Welcome! Please get confortable, this is my life's work, from Web Development to Architecture. Look around and contact me :)</title></title>
-  </head>
-  <body>
-    <script src="https://threejs.org/builds/three.js"></script>
-    <script src="https://threejs.org/examples/js/controls/OrbitControls.js"></script> 
-    <script>
-      var scene = new THREE.Scene( );
-      var camera = new THREE.PerspectiveCamera( 75, window.innerWidth / window.InnerHeight, 0.1, 1000);
+<html>
 
-      var renderer = new THREE.WebGLRenderer ();
-      renderer.setSize( window.innerWidth, window.InnerHeight);
-      document.body.apeendChild ( renderer.domElement);
-      //game logic
-      var update = function()
-      {
+<head>
+	<meta charset="utf-8">
+	<title>My first three.js app</title>
+</head>
 
-      };
-      //draw scene
-      var render = function( )
-      {
-        renderer.render (scene, camera);
-      };
-      //run game loop (update,render,repeat)
-      var GameLoop = function ( ){
-        requestAnimationFrame ( GameLoop);
-        update( );
-        render( );
-      };
-      GameLoop( );
-    </script>
-  </body>
+<body>
+	<script src="js/three.js"></script>
+	<script>
+		var scene = new THREE.Scene();
+		var camera = new THREE.PerspectiveCamera(75, window.innerWidth / window.innerHeight, 0.1, 1000);
+
+		var renderer = new THREE.WebGLRenderer();
+		renderer.setSize(window.innerWidth, window.innerHeight);
+		document.body.appendChild(renderer.domElement);
+		var geometry = new THREE.BoxGeometry();
+		var material = new THREE.MeshBasicMaterial({
+			color: 0x00ff00
+		});
+		var cube = new THREE.Mesh(geometry, material);
+		scene.add(cube);
+
+		camera.position.z = 5;
+
+		function animate() {
+			requestAnimationFrame(animate);
+			renderer.render(scene, camera);
+		}
+		animate();
+	</script>
+</body>
+
 </html>
