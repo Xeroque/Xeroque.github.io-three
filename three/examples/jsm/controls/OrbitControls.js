@@ -984,20 +984,22 @@ var OrbitControls = function ( object, domElement ) {
 
 	}
 
-	function onMouseWheel( event ) {
+	// Mouse Zoom is disabled 
 
-		if ( scope.enabled === false || scope.enableZoom === false || ( state !== STATE.NONE && state !== STATE.ROTATE ) ) return;
+	// function onMouseWheel( event ) {
 
-		event.preventDefault();
-		event.stopPropagation();
+	// 	if ( scope.enabled === false || scope.enableZoom === false || ( state !== STATE.NONE && state !== STATE.ROTATE ) ) return;
 
-		scope.dispatchEvent( startEvent );
+	// 	event.preventDefault();
+	// 	event.stopPropagation();
 
-		handleMouseWheel( event );
+	// 	scope.dispatchEvent( startEvent );
 
-		scope.dispatchEvent( endEvent );
+	// 	handleMouseWheel( event );
 
-	}
+	// 	scope.dispatchEvent( endEvent );
+
+	// }
 
 	function onKeyDown( event ) {
 
@@ -1175,7 +1177,9 @@ var OrbitControls = function ( object, domElement ) {
 	scope.domElement.addEventListener( 'contextmenu', onContextMenu, false );
 
 	scope.domElement.addEventListener( 'pointerdown', onPointerDown, false );
-	scope.domElement.addEventListener( 'wheel', onMouseWheel, false );
+	
+	// scope.domElement.addEventListener( 'wheel', onMouseWheel, false );
+
 
 	scope.domElement.addEventListener( 'touchstart', onTouchStart, false );
 	scope.domElement.addEventListener( 'touchend', onTouchEnd, false );
