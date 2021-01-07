@@ -5,6 +5,18 @@ body {
   overflow-x: hidden;
   overflow-y: scroll;
 }
+h2{
+  font-family: 'Oswald', sans-serif;
+  color: #fff7f8;
+}
+p{
+  font-family: 'Open Sans', sans-serif;
+  color: #fff7f8;
+}
+.container{
+  margin: 5vh 5vw 5vh 5vw;
+}
+/* Canvas for 3D projection */
 canvas {
   outline: none;
   margin-left: auto;
@@ -14,6 +26,7 @@ canvas {
   position: absolute;
   top: 1vh;
 }
+/* Website loading gif */
 #loadgif{
   position: absolute;
   z-index: 2;
@@ -21,6 +34,7 @@ canvas {
   width: 100%;
   pointer-events: none;
 }
+/* Navigation menu */
 .menu{
   font-family: 'Oswald', sans-serif;
   font-weight: 200;
@@ -35,6 +49,9 @@ a{
   color:#fff7f8;
   text-decoration: none;
 }
+a:hover{
+  color: #16f4d0;
+}
 #spacer{
   margin-top: 100vh;
   pointer-events: none;
@@ -46,15 +63,15 @@ a{
 
 /* Track */
 ::-webkit-scrollbar-track {
-  background: #0d090a00; 
+  background: #0d090a00;
 }
- 
+
 /* Handle */
 ::-webkit-scrollbar-thumb {
-  background: #fff7f8; 
+  background: #fff7f8;
 }
 
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
-  background:#fff7f8; 
+  background:#fff7f8;
 }
