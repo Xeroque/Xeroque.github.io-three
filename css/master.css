@@ -1,7 +1,7 @@
 body {
   display: inline;
   margin: 0;
-  background-color: black;
+  background-color: #262626;
   overflow-x: hidden;
   overflow-y: scroll;
   font-family: 'Space Mono', monospace;
@@ -16,6 +16,31 @@ body {
 }
 .logo{
   width: 30px;
+}
+.calltoaction{
+  color: white;
+  position: absolute;
+  left: 45%;
+  bottom: 5%;
+  border: none;
+  height: 100px;
+  width: 100px;
+  border-radius: 10px;
+  background: #262626;
+  box-shadow:  20px 20px 60px #202020,
+               -20px -20px 60px #2c2c2c; 
+}
+.calltoaction:hover{
+  position: absolute;
+  left: 45%;
+  bottom: 5%;
+  border: none;
+  height: 100px;
+  width: 100px;
+  border-radius: 10px;
+background: linear-gradient(145deg, #222222, #292929);
+box-shadow:  20px 20px 60px #202020,
+             -20px -20px 60px #2c2c2c;
 }
 /* Canvas for 3D projection */
 canvas {
@@ -35,7 +60,7 @@ canvas {
 
 /* Track */
 ::-webkit-scrollbar-track {
-  background: black;
+  background: #262626;
 }
 
 /* Handle */

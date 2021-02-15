@@ -10,8 +10,6 @@
 	<link rel="stylesheet" href="/css/master.css">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
-	<!-- Loads Jquery -->
-	<script src="js\Jquery.js"></script>
 <body d-flex h-100 text-center text-white>
 	<nav class="navbar navbar-expand-lg navbar-dark">
 		<div class="container-fluid">
@@ -30,11 +28,13 @@
 	<div class="cover-container d-flex w-100 h-100 p-3 mx-auto flex-column">
 		<main class="px-3">
 		  <h1 class="title">Discover the power of online architectural visualization.</h1>
+		  <button class="calltoaction">See More</button>
 		</main>
 	  </div>
 	<!-- Creates Canvas for 3D Logo -->
 		<div id="canvas"></div>
 		<script src="https://maxst.icons8.com/vue-static/landings/animated-icons/icons/scroll-down-hand/scroll-down-hand.json" type="text/javascript"></script>
+	<!-- Back to the page -->
 	<!-- ThreeJs  Settings -->
 	<script type="module" src="js\threejssettings.js"></script>
 	<!-- Forces window up on reload -->
@@ -42,7 +42,9 @@
 		$(window).on('beforeunload', function() {
    $(window).scrollTop(0);});
 </script>
+<!-- Loads Bootstrap JS -->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script><!-- Loads Jquery -->
+<!-- Loads Jquery -->
 <script src="js\Jquery.js"></script>
 </body>
 
