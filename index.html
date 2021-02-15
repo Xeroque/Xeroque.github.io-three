@@ -5,33 +5,45 @@
 	<meta charset="utf-8">
 	<title>R.39 Studio | Architectural Visualization on the web</title>
 	<link rel="preconnect" href="https://fonts.gstatic.com">
-	<link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Oswald:wght@200&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Space+Mono&display=swap" rel="stylesheet">
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
 	<link rel="stylesheet" href="/css/master.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
-
-<body>
 	<!-- Loads Jquery -->
 	<script src="js\Jquery.js"></script>
+<body d-flex h-100 text-center text-white>
+	<nav class="navbar navbar-expand-lg navbar-dark">
+		<div class="container-fluid">
+			<img class="logo" src="images\Logo.png" alt="">
+		  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+			<span class="navbar-toggler-icon"></span>
+		  </button>
+		  <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+			<div class="navbar-nav">
+			  <a class="nav-link" href="#">Projects</a>
+			  <a class="nav-link" href="#">Contact</a>
+			</div>
+		  </div>
+		</div>
+	  </nav>
+	<div class="cover-container d-flex w-100 h-100 p-3 mx-auto flex-column">
+		<main class="px-3">
+		  <h1 class="title">Discover the power of online architectural visualization.</h1>
+		</main>
+	  </div>
 	<!-- Creates Canvas for 3D Logo -->
 		<div id="canvas"></div>
-	<!-- Loading Gif -->
-	<!-- <img id="loadgif" src="images\WebsiteLoad.gif" alt=""> -->
-	<!-- Nav Menu -->
-	<h2 class="menu"><a href="">Projects   </a>|<a href="">   Contact</a> </h2>
+		<script src="https://maxst.icons8.com/vue-static/landings/animated-icons/icons/scroll-down-hand/scroll-down-hand.json" type="text/javascript"></script>
 	<!-- ThreeJs  Settings -->
 	<script type="module" src="js\threejssettings.js"></script>
-	<!-- Space after Canvas -->
-	<hr id="spacer">
-	<!-- Container for website's content -->
-	<div class="container">
-		<h2>What do we do?</h2>
-		<p>botton text</p>
-	</div>
 	<!-- Forces window up on reload -->
 	<script>
 		$(window).on('beforeunload', function() {
    $(window).scrollTop(0);});
 </script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script><!-- Loads Jquery -->
+<script src="js\Jquery.js"></script>
 </body>
 
 </html>

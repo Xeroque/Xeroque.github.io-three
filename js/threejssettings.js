@@ -34,7 +34,7 @@ camera.position.z = radius * Math.cos( THREE.MathUtils.degToRad( theta ) );
 camera.lookAt( scene.position );
 controls.update();
 //creating a new background
-scene.background = new THREE.Color(0x0d090a);;
+scene.background = new THREE.Color(0x000000);;
 // creating lights
 var light = new THREE.AmbientLight( 0x404040 ); // soft white light
 scene.add( light );

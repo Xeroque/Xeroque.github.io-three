@@ -1,20 +1,21 @@
 body {
   display: inline;
   margin: 0;
-  background-color: #0d090a;
+  background-color: black;
   overflow-x: hidden;
   overflow-y: scroll;
+  font-family: 'Space Mono', monospace;
 }
-h2{
-  font-family: 'Oswald', sans-serif;
-  color: #fff7f8;
+.title{
+  display: block;
+  width: 100px;
+  color: white;
+  font-size: 2vh;
+  margin-left: auto;
+  margin-right: auto;
 }
-p{
-  font-family: 'Open Sans', sans-serif;
-  color: #fff7f8;
-}
-.container{
-  margin: 5vh 5vw 5vh 5vw;
+.logo{
+  width: 30px;
 }
 /* Canvas for 3D projection */
 canvas {
@@ -25,36 +26,7 @@ canvas {
   height: 100%;
   position: absolute;
   top: 1vh;
-}
-/* Website loading gif */
-#loadgif{
-  position: absolute;
-  z-index: 2;
-  margin-top: -30px;
-  width: 100%;
-  pointer-events: none;
-}
-/* Navigation menu */
-.menu{
-  font-family: 'Oswald', sans-serif;
-  font-weight: 200;
-  color:#fff7f8;
-  position: absolute;
-  top: 10px;
-  right: 10px;
-  z-index: 1;
-  margin-right: 1vw;
-}
-a{
-  color:#fff7f8;
-  text-decoration: none;
-}
-a:hover{
-  color: #16f4d0;
-}
-#spacer{
-  margin-top: 100vh;
-  pointer-events: none;
+  z-index: -1;
 }
 /* width */
 ::-webkit-scrollbar {
@@ -63,7 +35,7 @@ a:hover{
 
 /* Track */
 ::-webkit-scrollbar-track {
-  background: #0d090a00;
+  background: black;
 }
 
 /* Handle */
